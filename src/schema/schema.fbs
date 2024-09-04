@@ -1,0 +1,21 @@
+namespace fb;
+
+struct Frame {
+  x:int32;
+  y:int32;
+  w:int32;
+  h:int32;
+  duration:int32;
+}
+
+table Sprite {
+  name:string;
+  frames:[Frame];
+}
+
+table Resources {
+  spritesheet:[ubyte];
+  sprites:[Sprite];
+}
+
+root_type Resources;

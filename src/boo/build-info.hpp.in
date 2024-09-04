@@ -1,0 +1,10 @@
+#pragma once
+
+#include <filesystem>
+
+namespace bi {
+
+const auto exeDir = std::filesystem::path{"@EXE_DIR@"};
+const auto dataFile = std::filesystem::path{"@DATA_FILE@"};
+
+} // namespace bi
